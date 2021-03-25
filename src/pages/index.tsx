@@ -3,8 +3,8 @@ import dynamic from "next/dynamic";
 
 const Starter = dynamic(import("scenes/Starter"), { ssr: false });
 
-const LinkTree: NextPage = () => {
+const StarterPage: NextPage = () => {
   return <Starter />;
 };
 
-export default LinkTree;
+export default StarterPage;

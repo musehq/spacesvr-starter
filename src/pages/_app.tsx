@@ -5,7 +5,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <title>spacesvr Project</title>
+        <title>spacesvr project</title>
       </Head>
       <Component {...pageProps} />
     </>
