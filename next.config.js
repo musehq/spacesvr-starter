@@ -1,14 +1,14 @@
 const withPlugins = require("next-compose-plugins");
-
 const transpileModules = require("next-transpile-modules")([
   "three",
-  "drei",
-  "postprocessing",
-  "react-three-fiber",
-  "use-cannon",
+  "@react-three/drei",
+  "@react-three/fiber",
+  "@react-three/cannon",
 ]);
 
-const withWebpack = {
+module.exports = {
+  ...withPlugins([transpileModules]),
+  reactStrictMode: true,
   webpack: (config, { isServer }) => {
     // Fixes npm packages that depend on `fs` module
     if (!isServer) {
@@ -19,11 +19,4 @@ const withWebpack = {
 
     return config;
   },
-};
-
-module.exports = {
-  ...withPlugins([transpileModules]),
-  experimental: { reactMode: "concurrent" },
-  reactStrictMode: true,
-  ...withWebpack,
 };
