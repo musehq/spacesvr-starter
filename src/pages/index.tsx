@@ -1,10 +1,7 @@
-import { NextPage } from "next";
 import dynamic from "next/dynamic";
 
-const Starter = dynamic(import("scenes/Starter"), { ssr: false });
+const Starter = dynamic(import("worlds/Starter"), { ssr: false });
 
-const StarterPage: NextPage = () => {
+export default function StarterPage() {
   return <Starter />;
 };
-
-export default StarterPage;

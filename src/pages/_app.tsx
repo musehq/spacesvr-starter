@@ -1,7 +1,7 @@
 import { AppProps } from "next/app";
 import Head from "next/head";
 
-const App = ({ Component, pageProps }: AppProps) => {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -11,5 +11,3 @@ const App = ({ Component, pageProps }: AppProps) => {
     </>
   );
 };
-
-export default App;
