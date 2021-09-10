@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "next dev",
-    "build": "EXPORT=true next build && EXPORT=true next export",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "yarn prettier && yarn eslint",
     "eslint": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
