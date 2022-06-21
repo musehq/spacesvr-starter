@@ -1,4 +1,4 @@
-# spacesvr starter package
+# spacesvr starter repo
 
 A starter repository to quickly start building using [spacesvr](https://github.com/spacesvr/spacesvr)
 

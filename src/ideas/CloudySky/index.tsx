@@ -1,10 +1,5 @@
-// @ts-ignore
-import * as culori from "culori";
-import { GroupProps, useFrame } from "@react-three/fiber";
-import { useMemo } from "react";
-import { Color, ShaderMaterial, Uniform } from "three";
-import * as THREE from "three";
-import { useLimiter } from "spacesvr";
+import { GroupProps } from "@react-three/fiber";
+import { Color } from "three";
 import { useSkyMat } from "./materials/sky";
 
 type GradientSky = {

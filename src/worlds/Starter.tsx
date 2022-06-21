@@ -1,10 +1,10 @@
-import { Spinning, Floating, StandardEnvironment } from "spacesvr";
-import TransparentFloor from "../ideas/TransparentFloor";
-import CloudySky from "../ideas/CloudySky";
+import { Spinning, Floating, StandardReality } from "spacesvr";
+import TransparentFloor from "ideas/TransparentFloor";
+import CloudySky from "ideas/CloudySky";
 
 export default function Starter() {
   return (
-    <StandardEnvironment>
+    <StandardReality>
       <ambientLight />
       <group position={[0, 0, -4]}>
         <Floating>
@@ -18,6 +18,6 @@ export default function Starter() {
       </group>
       <CloudySky color="white" />
       <TransparentFloor opacity={0.7} />
-    </StandardEnvironment>
+    </StandardReality>
   );
 }

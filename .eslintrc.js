@@ -10,7 +10,6 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "prettier/@typescript-eslint",
   ],
-  ignorePatterns: ["/public/draco-gltf/*.js"],
   rules: {
     // sometimes required for workarounds, perhaps change both of these to warn in the future
     "@typescript-eslint/no-explicit-any": "off",
@@ -32,7 +31,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: [".eslintrc.js", "next.config.js"],
+      files: [".eslintrc.js"],
       env: {
         node: true,
       },
