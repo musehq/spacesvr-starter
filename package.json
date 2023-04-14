@@ -12,15 +12,13 @@
   "dependencies": {
     "next": "^12.1.6",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "spacesvr": "latest",
-    "three": "0.139.2"
+    "react-dom": "^18.1.0"
   },
   "devDependencies": {
     "@types/node": "17.0.40",
     "@types/react": "18.0.12",
     "@types/react-dom": "18.0.5",
-    "@types/three": "0.139.0",
+    "@types/three": "0.150.1",
     "@typescript-eslint/eslint-plugin": "^3.2.0",
     "@typescript-eslint/parser": "^3.2.0",
     "eslint": "^7.20.0",
